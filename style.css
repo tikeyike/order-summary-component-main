@@ -132,14 +132,14 @@ strong {
   .container {
     margin-top: 1rem;
   }
-  
+
   .card-content {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .text {
     line-height: 1.5;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 
   body {
