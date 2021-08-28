@@ -128,14 +128,18 @@ strong {
   color: var(--dark-blue);
 }
 
-@media screen and (max-width: calc(450px + 2rem)) {
+@media screen and (max-width: 482px) {
+  .container {
+    margin-top: 1rem;
+  }
+  
   .card-content {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .text {
     line-height: 1.5;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
   body {
