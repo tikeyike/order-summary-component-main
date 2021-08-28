@@ -1,0 +1,146 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  margin: 0;
+}
+
+strong {
+  color: #000;
+}
+
+.container {
+  width: calc(100vw - 2rem);
+  margin: auto;
+  max-width: min-content;
+  margin-top: calc(50vh - (672px / 2));
+}
+
+.card-hero {
+  border-radius: 1rem 1rem 0 0;
+  display: block;
+  max-width: inherit;
+  width: inherit;
+}
+
+.card-content {
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  border-radius: 0 0 1rem 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  color: var(--desaturated-blue);
+}
+
+.chip {
+  display: flex;
+  padding: 1.5rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chip > * {
+  height: 48px;
+}
+
+.chip-text {
+  color: var(--desaturated-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 48px;
+}
+
+.button {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--bright-blue);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 0px 16px 16px 0px hsla(244.9, 74.7%, 52%, 0.25);
+}
+
+.link {
+  text-align: center;
+  font-weight: 900;
+  color: var(--desaturated-blue);
+  font-size: 0.9rem;
+}
+
+.spacing {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.change {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.hover:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.background:hover {
+  background-color: #766cf1;
+}
+
+.text:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+.dark:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (max-width: calc(450px + 2rem)) {
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .text {
+    line-height: 1.5;
+    padding: 0 1rem;
+  }
+
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
